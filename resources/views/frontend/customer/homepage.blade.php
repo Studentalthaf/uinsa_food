@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/zerogrid.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/style.css') }}">
 <link rel="shortcut icon" href="{{ asset('frontend/images/favicon.png') }}">
+
 </head>
 <body>
 

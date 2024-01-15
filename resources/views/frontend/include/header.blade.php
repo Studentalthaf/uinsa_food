@@ -35,7 +35,7 @@
                       <li><a href="{{ route('about') }}">Tentang Kami</a></li>
                       <li><a href="{{ route('contact') }}">Kontak</a></li>
                     
-                  <li><a href="#">Login</a></li>
+                  <li><a href="{{ route('auth') }}">Login</a></li>
                   
                 </ul>
               </div>
