@@ -120,7 +120,7 @@
                 <div class="row">
                     <div class="input-field col s6 m6 l6">
                         <p class="margin medium-small">
-                            Account Allready? <a href="{{ route('auth') }}" class="text-primary">Login</a>
+                        <a href="{{ route('auth') }}" class="text-primary">Login</a>
                             <a href="/" style="float: left;">Kembali</a>
                         </p>
                         @if ($errors->any())

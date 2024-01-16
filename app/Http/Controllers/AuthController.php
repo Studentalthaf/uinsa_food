@@ -108,6 +108,10 @@ class AuthController extends Controller
             return redirect()->route('auth')->withErrors('gagal','Verified pastikan melakukan register')->withInput();
         }
     }
+    function logout(){
+        Auth::logout();
+        return redirect('/');
+    }
 
 }
 

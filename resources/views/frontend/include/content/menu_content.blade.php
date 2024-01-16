@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{{ asset('frontend/css/style.c') }}">
     <!--Menu-->
 
     <div class="menu" id="Menu">

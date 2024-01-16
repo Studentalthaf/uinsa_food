@@ -16,6 +16,9 @@
               </div>
                 <h3><a href="#">Ayam Utuh Bakar Madu</a></h3>
                 <p>Enjoy Delicious Food!</p>
+                <div class="menu_info">
+                  <a href="#" class="menu_btn">Order Now</a>
+                </div>
               </div>
             </div>
             <div class="item">

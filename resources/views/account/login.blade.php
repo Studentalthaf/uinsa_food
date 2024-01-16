@@ -47,28 +47,6 @@
 
 
     <div id="login-page" class="row">
-        <header id="main-navigation">
-            <div id="navigation" data-spy="affix" data-offset-top="20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <nav class="navbar navbar-default">
-                                <div id="fixed-collapse-navbar" class="navbar-collapse collapse navbar-right">
-                                    <ul class="nav navbar-nav">
-                                        <li>
-                                            <a href="../index.html">Home</a>
-                                        </li>
-                                        <li><a href="../food.html">Our Food</a></li>
-                                        <li><a href="../about.html">About</a></li>
-                                        <li><a href="../faq.html">FAQ</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
         <div class="col s12 z-depth-4 card-panel">
             <form method="POST" action="{{ route('auth') }}" class="login-form" id="form">
                 @csrf
