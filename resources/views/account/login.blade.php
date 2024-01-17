@@ -54,35 +54,6 @@
                 <div class="row">
                     <div class="input-field col s12 center">
                         <p class="center login-form-text">Login for Food Ordering System</p>
-                    </div>
-                </div>
-                <div class="row margin">
-                    <div class="input-field col s12">
-                        <i class="mdi-social-person-outline prefix"></i>
-                        <input name="email" id="username" type="text" value="{{ old('username') }}">
-                        <label for="email" class="center-align"></label>
-                    </div>
-                </div>
-                <div class="row margin">
-                    <div class="input-field col s12">
-                        <i class="mdi-action-lock-outline prefix"></i>
-                        <input name="password" id="password" type="password">
-                        <label for="password"></label>
-                    </div>
-                </div>
-                {{-- <div class="row">
-                    <a href="javascript:void(0);" onclick="document.getElementById('form').submit();"
-                        class="btn waves-effect waves-light col s12">Login</a>
-                </div> --}}
-                <div class="input-field col s6 m6 l6">
-                    <button type="submit" class="btn" style="background-color: #499848;">Login</button>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6 m6 l6">
-                        <p class="margin medium-small">
-                            <a href="{{ route('registrasi') }}" style="float: left;">Register Now!</a>
-                            <a href="/" style="float: left;">Kembali</a>
-                        </p>
                         @if ($errors->any())
                             <div class="alert alert-danger">
                                 <ul>
@@ -101,9 +72,33 @@
                         @endif
                     </div>
                 </div>
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-social-person-outline prefix"></i>
+                        <input name="email" id="username" type="text" value="{{ old('username') }}">
+                        <label for="email" class="center-align"></label>
+                    </div>
+                </div>
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-action-lock-outline prefix"></i>
+                        <input name="password" id="password" type="password">
+                        <label for="password"></label>
+                    </div>
+                </div>
+                <div class="input-field col s6 m6 l6">
+                    <button type="submit" class="btn" style="background-color: #499848;">Login</button>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 m6 l6">
+                        <p class="margin medium-small">
+                            <a href="{{ route('registrasi') }}" style="float: left;">Register Now!</a>
+                            <a href="/" style="float: left;">Kembali</a>
+                        </p>
+
+                    </div>
+                </div>
         </div>
-
-
         </form>
     </div>
     </div>

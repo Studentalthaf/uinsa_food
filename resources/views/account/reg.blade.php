@@ -47,28 +47,6 @@
 
 
     <div id="login-page" class="row">
-        <header id="main-navigation">
-            <div id="navigation" data-spy="affix" data-offset-top="20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <nav class="navbar navbar-default">
-                                <div id="fixed-collapse-navbar" class="navbar-collapse collapse navbar-right">
-                                    <ul class="nav navbar-nav">
-                                        <li>
-                                            <a href="../index.html">Home</a>
-                                        </li>
-                                        <li><a href="../food.html">Our Food</a></li>
-                                        <li><a href="../about.html">About</a></li>
-                                        <li><a href="../faq.html">FAQ</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
         <div class="col s12 z-depth-4 card-panel">
             <form method="POST" action="{{ route('registrasi') }}" class="login-form" id="form">
                 @csrf
@@ -76,6 +54,22 @@
                 <div class="row">
                     <div class="input-field col s12 center">
                         <p class="center login-form-text">Login for Food Ordering System</p>
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @if (Session::get('success'))
+                        <div class="alert alert-success alert-dismissable fade show">
+                            <ul>
+                                <li>{{ Session::get('success') }}</li>
+                            </ul>
+                        </div>
+                    @endif
                     </div>
                 </div>
                 <div class="row margin">
@@ -123,22 +117,6 @@
                         <a href="{{ route('auth') }}" class="text-primary">Login</a>
                             <a href="/" style="float: left;">Kembali</a>
                         </p>
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $item)
-                                        <li>{{ $item }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                        @if (Session::get('success'))
-                            <div class="alert alert-success alert-dismissable fade show">
-                                <ul>
-                                    <li>{{ Session::get('success') }}</li>
-                                </ul>
-                            </div>
-                        @endif
                     </div>
                 </div>
         </div>
