@@ -76,14 +76,14 @@
                     <div class="input-field col s12">
                         <i class="mdi-social-person-outline prefix"></i>
                         <input name="email" id="username" type="text" value="{{ old('username') }}">
-                        <label for="email" class="center-align"></label>
+                        <label for="email" class="center-align">Email</label>
                     </div>
                 </div>
                 <div class="row margin">
                     <div class="input-field col s12">
                         <i class="mdi-action-lock-outline prefix"></i>
                         <input name="password" id="password" type="password">
-                        <label for="password"></label>
+                        <label for="password">Password</label>
                     </div>
                 </div>
                 <div class="input-field col s6 m6 l6">

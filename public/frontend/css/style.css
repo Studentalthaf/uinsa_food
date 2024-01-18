@@ -1026,86 +1026,116 @@ ul.tags li a, ul.social_icon li a,
   padding-top: 20px; /* Ubah nilai sesuai kebutuhan */
   padding-bottom: 20px; /* Ubah nilai sesuai kebutuhan */
 }
-#our-cheffs .item {
-  padding: 0 20px;
-  width: 330px;
-  height: 390px;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s; /* Tambahkan efek box-shadow */
-}
-
-#our-cheffs .item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(73, 152, 72, 0.2); /* Tambahkan bayangan hijau saat hover */
-} 
-
-#our-cheffs .item .cheffs_photo,
-#our-cheffs .item .cheffs_info {
-  display: table-cell;
-}
-
-#our-cheffs .item .cheffs_photo > img {
+#our-cheffs .item .cheffs_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
-#our-cheffs .item .cheffs_info {
-  padding-right: 15px;
-  vertical-align: middle;
-}
-
-#our-cheffs .item .cheffs_info h2 {
-  font-size: 24px;
-  font-weight: bold;
-  position: relative;
-  z-index: 11;
-  overflow: hidden;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-#our-cheffs .item:hover .cheffs_info h2 {
-  color: #499848;
-}
-
-#our-cheffs .item .cheffs_info h2:after {
-  background: #111111;
-  content: "";
-  display: inline-block;
-  height: 1px;
+#our-cheffs .item .menu_card {
   width: 100%;
-  position: absolute;
-  right: 0;
-  z-index: 5;
-  bottom: 9px;
-  left: 70px;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: box-shadow 0.3s, transform 0.3s;
+  text-align: center;
 }
 
-#our-cheffs .item .cheffs_info h3,
-.cheffs_wrap h3 {
+#our-cheffs .item .menu_card .menu_image {
+  width: 100%;
+  height: auto;
+}
+
+#our-cheffs .item .menu_card .menu_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+#our-cheffs .item .menu_card .menu_image:hover img {
+  transform: scale(1.1);
+}
+
+#our-cheffs .item .menu_card .small_card {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+#our-cheffs .item:hover .menu_card .small_card {
+  top: 10px;
+  right: 10px;
+  opacity: 1;
+}
+
+#our-cheffs .item .menu_card .small_card i {
+  font-size: 25px;
+  line-height: 50px;
+  color: #000;
+  cursor: pointer;
+  text-shadow: 0 0 6px #000;
+  transition: 0.2s;
+}
+
+#our-cheffs .item .menu_card .small_card i:hover {
   color: #499848;
+}
+
+#our-cheffs .item .menu_card .menu_info h2 {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 25px;
+  color: #499848;
+}
+
+#our-cheffs .item .menu_card .menu_info p {
+  text-align: center;
+  margin-top: 8px;
+  line-height: 21px;
+}
+
+#our-cheffs .item .menu_card .menu_info h3 {
+  text-align: center;
   margin-top: 10px;
 }
 
-#our-cheffs .item .cheffs_info small,
-.cheffs_wrap small {
-  color: #796e6e;
-  font-size: 14px;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-#our-cheffs .owl-item {
-  width: 330px; /* Sesuaikan lebar card sesuai kebutuhan Anda */
-  height: 390px; /* Sesuaikan tinggi card sesuai kebutuhan Anda */
-  transition: transform 0.3s, box-shadow 0.3s; /* Tambahkan efek box-shadow */
-}
-
-
-#our-cheffs .item .cheffs_photo > img {
-  height: 100%;
-  width: 100%; /* Tambahkan agar gambar mencapai proporsi yang diinginkan */
+#our-cheffs .item .menu_card .menu_info .menu_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background: #000;
+  padding: 8px 10px;
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 15px;
 }
 
+#our-cheffs .item:hover .menu_card {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+#our-cheffs .item:hover .menu_card .menu_btn {
+  background-color: #499848;
+  color: #fff;
+  border-radius: 15px;
+}
 #our-cheffs .owl-prev,
 #our-cheffs .owl-next {
   top: 50%;

@@ -1,5 +1,4 @@
-<!-- dessert -->
-<section id="cheffs" class="padding">
+<section id="cheffs2">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -11,13 +10,12 @@
             <div class="col-md-12">
                 <div class="cheffs_wrap_slider">
                     <div id="our-cheffs" class="owl-carousel">
-
                         <div class="item">
                             <div class="cheffs_wrap">
                                 <div class="menu_card">
 
                                     <div class="menu_image">
-                                        <img src="{{ asset('frontend/images/our-cheffs2.jpg') }}" alt="Chef Image">
+                                        <img src="{{ asset('frontend/images/gallery8.jpg') }}" alt="Chef Image">
                                     </div>
 
                                     <div class="small_card">
@@ -39,7 +37,7 @@
                                 <div class="menu_card">
 
                                     <div class="menu_image">
-                                        <img src="{{ asset('frontend/images/our-cheffs2.jpg') }}" alt="Chef Image">
+                                        <img src="{{ asset('frontend/images/gallery8.jpg') }}" alt="Chef Image">
                                     </div>
 
                                     <div class="small_card">
@@ -61,7 +59,7 @@
                                 <div class="menu_card">
 
                                     <div class="menu_image">
-                                        <img src="{{ asset('frontend/images/our-cheffs2.jpg') }}" alt="Chef Image">
+                                        <img src="{{ asset('frontend/images/gallery8.jpg') }}" alt="Chef Image">
                                     </div>
 
                                     <div class="small_card">
@@ -83,7 +81,7 @@
                                 <div class="menu_card">
 
                                     <div class="menu_image">
-                                        <img src="{{ asset('frontend/images/our-cheffs2.jpg') }}" alt="Chef Image">
+                                        <img src="{{ asset('frontend/images/gallery8.jpg') }}" alt="Chef Image">
                                     </div>
 
                                     <div class="small_card">
@@ -105,7 +103,7 @@
                                 <div class="menu_card">
 
                                     <div class="menu_image">
-                                        <img src="{{ asset('frontend/images/our-cheffs2.jpg') }}" alt="Chef Image">
+                                        <img src="{{ asset('frontend/images/gallery8.jpg') }}" alt="Chef Image">
                                     </div>
 
                                     <div class="small_card">
@@ -122,6 +120,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
